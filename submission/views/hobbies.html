@@ -15,6 +15,17 @@
             height: 400px;
             object-fit: cover;
         }
+        .wrapper {
+            display: grid;
+        }
+        @media screen and (min-width: 600px) {
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 5%;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -31,9 +42,7 @@
     <div class="container">
         <h1> My Hobbies </h1>
     </div>
-    <div class="container">
-        <div class="container text-center">
-            <div class="row">
+        <div class="container text-center wrapper">
                 
                 <!-- Card 1 -->
                 <div class="col">
@@ -67,10 +76,7 @@
                         </div>
                     </div>
                 </div>
-            
-            </div>
         </div>
-    </div>
     <!-- Footer -->
     <footer>
         <a href="https://www.linkedin.com/in/kabrown066" target="_blank">LinkedIn</a>
